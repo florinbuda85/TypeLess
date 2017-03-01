@@ -7,7 +7,7 @@
             <td><asp:TextBox ID="tbName" runat="server"></asp:TextBox></td>
         </tr>
     </table>
-    <asp:Button ID="Button1" runat="server" Text="do" OnClick="Button1_Click1" />
+    <asp:Button ID="Button1" runat="server" Text="do" OnClick="Button1_Click1" class="btn btn-primary btn-mini" />
     <hr />   
     <pre><asp:Label ID="lblOutput" runat="server" Text="###" BackColor="#FFFFCC"></asp:Label></pre> 
 </asp:Content>
