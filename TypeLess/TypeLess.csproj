@@ -171,6 +171,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Components\CompSQLBackupTable.aspx" />
+    <Content Include="Components\CompSQLDoublesCounter.aspx" />
     <Content Include="Components\MyICommand.aspx" />
     <Content Include="Components\MyObservableCollection.aspx" />
     <Content Include="Components\MyProperty.aspx" />
@@ -358,6 +359,13 @@
     </Compile>
     <Compile Include="Components\CompSQLBackupTable.aspx.designer.cs">
       <DependentUpon>CompSQLBackupTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CompSQLDoublesCounter.aspx.cs">
+      <DependentUpon>CompSQLDoublesCounter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\CompSQLDoublesCounter.aspx.designer.cs">
+      <DependentUpon>CompSQLDoublesCounter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Components\MyICommand.aspx.cs">
       <DependentUpon>MyICommand.aspx</DependentUpon>
