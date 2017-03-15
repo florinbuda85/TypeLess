@@ -38,7 +38,8 @@ namespace TypeLess.Components
             pattern = pattern.Replace("{1}", Utils.UppercaseFirst(tbName.Text));
             pattern = pattern.Replace("{2}", Utils.LowercaseFirst(tbName.Text));
 
-            lblOutput.Text = pattern;
+
+            lblOutput.Text = Server.HtmlEncode(pattern);
         }
     }
 
