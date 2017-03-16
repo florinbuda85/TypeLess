@@ -1,0 +1,609 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+.form_section
+{
+	padding: 10px 0px;
+	overflow: auto;
+	clear: both;
+}
+
+.left_form_column
+{
+	float: left;
+	width: 710px;
+	padding-left: 30px;
+	overflow: auto;
+}
+
+.right_form_column
+{
+	float: left;
+	width: 166px;
+	margin: 0px 30px 0px 20px;
+	overflow: auto;
+}
+
+.label
+{
+	float: left;
+	color: #464646;
+	font-weight: bold;
+	padding-bottom: 2px;
+	overflow: auto;
+}
+
+.replacement_label
+{
+	padding-bottom: 2px;
+}
+
+.replacement_input_wrap
+{
+	clear: both;
+}
+
+.replacement_tip
+{
+	display: none;
+	background: url(../Images/Icons/storm.png) no-repeat 0 1px;
+	float: left;
+	color: #464646;
+	padding: 0px 0px 0px 20px;
+	line-height: 140%;
+}
+
+.text_area_input,
+.haystack_backdrop_wrap_powered div,
+.haystack_backdrop_wrap em,
+.details_context
+{
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.text_area_input
+{
+	float: left;
+    clear: left;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	width: 696px;
+	padding: 6px;
+	margin: 0px;
+	background: #f7f7f7 url(../Images/input_fade.png) repeat-x;
+	resize: none;
+	letter-spacing: 1px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.pattern_input,
+.replacement_input
+{
+	height: 71px;
+}
+
+.haystack_backdrop_wrap
+{
+	float: left;
+    clear: left;
+	width: 710px;
+	height: 214px;
+}
+
+/* this style is added to the haystack backdrop wrap
+   when javascript is enabled, altering this div and
+   many child elements to enable the async stuff */
+.haystack_backdrop_wrap_powered
+{
+	border-radius: 5px;
+	background: #f7f7f7 url(../Images/input_fade.png) repeat-x;
+}
+
+.haystack_backdrop_wrap div
+{
+	display: none;
+}
+
+.haystack_backdrop_wrap_powered div
+{
+	display: block;
+	color: #f7f7f7;
+	letter-spacing: 1px;
+	width: 708px;
+	height: 212px;
+	margin: 1px;
+	position: absolute;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.haystack_backdrop_wrap pre
+{
+	padding: 6px;
+    font-family: inherit;
+}
+
+.haystack_backdrop_button
+{
+	display: none;
+}
+
+.haystack_input
+{
+	height: 200px;
+}
+
+.haystack_backdrop_wrap_powered .haystack_input
+{
+	float: none;
+	background-color: Transparent;
+	background-image: url(../Images/transparent.gif); /* fixes IE7 unclickable issue */
+	position: absolute;
+}
+
+pre
+{
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 0px;
+	padding: 0px;
+}
+
+.haystack_backdrop_wrap em
+{
+	border-radius: 3px;
+	font-style: normal;
+
+	/* these 2 styles fix a bug in IE8 where a wrapped span's
+	   background randomly dissappears on hover (yeah, WTF?) */
+	padding-right: .01px;
+	margin-right: -.01px;
+}
+
+.haystack_backdrop_wrap em.odd
+{
+	color: #a5d6f0;
+	background-color: #a5d6f0;
+}
+
+.haystack_backdrop_wrap em.even
+{
+	color: #c1e044;
+	background-color: #c1e044;
+}
+
+.haystack_backdrop_wrap em.hide
+{
+	visibility: hidden;
+}
+
+.replacement_toggle_block
+{
+	clear: both;
+	overflow: auto;
+}
+
+.replacement_toggle_block input
+{
+	float: left;
+	height: 17px;
+	vertical-align: middle;
+}
+
+.replacement_toggle_block label
+{
+	display: block;
+	float: left;
+	padding: 3px 0px 0px 2px;
+}
+
+.options_wrap
+{
+	clear: both;
+	overflow: auto;
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	background: #f7f7f7 url(../Images/input_fade.png) repeat-x;
+}
+
+.check_options
+{
+	clear: both;
+	overflow: auto;
+	padding-bottom: 8px;
+	border-bottom: dotted 1px #ccc;
+	margin-bottom: 6px;
+}
+
+.check_options_block
+{
+	clear: both;
+	overflow: auto;
+	padding-bottom: 2px;
+}
+
+.check_options_block input
+{
+	float: left;
+	height: 17px;
+	vertical-align: middle;
+}
+
+.check_options_block label
+{
+	display: block;
+	float: left;
+	padding: 3px 0px 0px 2px;
+}
+
+.numerical_options
+{
+	clear: both;
+	overflow: auto;
+}
+
+.numerical_option_block
+{
+	clear: both;
+	overflow: auto;
+	padding-top: 4px;
+}
+
+.numerical_option_block label
+{
+	display: block;
+	float: left;
+	padding-top: 3px;
+}
+
+.numerical_option_block input
+{
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+	border-radius: 5px;
+	padding: 2px;
+	margin: 2px 0 0;
+	border: solid 1px #ccc;
+	background-color: #fff;
+	font-size: 14px;
+	font-family: 'Droid Sans Mono', monospace;
+	text-align: right;
+}
+
+.val_sum
+{
+	overflow: auto;
+}
+
+.val_sum ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.val_sum li
+{
+	margin: 0px;
+	padding: 1px 0px 1px 20px;
+	background: url(../Images/Icons/error.png) no-repeat 0px 0px;
+}
+
+.submit_section
+{
+	padding: 10px 30px;
+}
+
+.details_tabs
+{
+	display: none;
+	overflow: auto;
+	padding-left: 10px;
+	margin: 20px 30px 0px 30px;
+	list-style-type: none;
+	background: url(../Images/pixel-cccccc.gif) repeat-x bottom left;
+}
+
+.details_tabs li
+{
+	float: left;
+	margin-right: 4px;
+	border: solid 1px #ccc;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: #eee url(../Images/detail_tab_back.png) repeat-x;
+}
+
+.details_tabs li.details_tab_active
+{
+	background-image: none;
+	background-color: #f7f7f7;
+	border-bottom: solid 1px #f7f7f7;
+}
+
+.details_tabs a
+{
+	display: block;
+	padding: 4px 16px 4px 38px;
+	background-repeat: no-repeat;
+	background-position: 16px 4px;
+}
+
+.details_info_link
+{
+	background: url(../Images/Icons/info.png);
+}
+
+.details_table_link
+{
+	background: url(../Images/Icons/table.png);
+}
+
+.details_context_link
+{
+	background: url(../Images/Icons/context.png);
+}
+
+.details_split_link
+{
+	background: url(../Images/Icons/list.png);
+}
+
+.details_content
+{
+	overflow: auto;
+	border: solid 1px #ccc;
+	border-top: none;
+	padding: 10px 20px;
+	margin: 0px 30px;
+	background-color: #f7f7f7;
+	min-height: 36px;
+}
+
+.details_content_no_script
+{
+	margin-top: 20px;
+	border-top: solid 1px #ccc;
+}
+
+.details_section
+{
+	display: none;
+	overflow: auto;
+	padding: 10px 0px;
+}
+
+/* special class to keep details info panel on */
+.details_info_section
+{
+	display: block;
+}
+
+.details_loading
+{
+	display: none;
+	width: 854px;
+	position: absolute;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.non-lit,
+.split_list li span.non-lit,
+.captures ol li span.non-lit
+{
+	color: #999;
+	font-style: italic;
+}
+
+.regex_info_blurb
+{
+	display: block;
+	background: url(../Images/Icons/info.png) no-repeat 0 1px;
+	background-color: #f7f7f7; /* fixes IE ugly png fading */
+	padding: 1px 0px 1px 20px;
+}
+
+.permalink_wrap
+{
+	padding-top: 10px;
+	clear: both; /* fixes shy IE margin bug */
+}
+
+.show_permalink
+{
+	display: none;
+	background: url(../Images/Icons/permalink.png) no-repeat;
+	background-color: #f7f7f7; /* fixes IE ugly png fading */
+	padding: 1px 0px 1px 20px;
+}
+
+.permalink_length_warning
+{
+	clear: both;
+	padding-bottom: 2px;
+	font-style: italic;
+	font-size: 11px;
+}
+
+.permalink_input
+{
+	border: dotted 1px #ccc;
+	background: url(../Images/Icons/permalink.png) no-repeat 6px 7px;
+	padding: 6px 6px 6px 26px;
+	color: #666;
+	width: 820px;
+	font-family: 'Droid Sans Mono', monospace;
+	background-color: #fff;
+    font-size: 14px;
+}
+
+.details_table_wrap
+{
+	float: left;
+	width: 852px;
+	border: solid 1px #ccc;
+	overflow: auto;
+}
+
+.details_table
+{
+	width: 852px;
+	background-color: #f7f7f7;
+}
+
+.details_table_header_row
+{
+	text-align: left;
+	background-color: #999;
+	background: url(../Images/table_header_back.gif) repeat-x;
+}
+
+.details_table tr.odd
+{
+	background-color: #fff;
+}
+
+.details_table tr.even
+{
+	background-color: #f2f2f2;
+}
+
+.details_table th
+{
+	padding: 6px;
+	border-left: solid 1px #ccc;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.details_table td
+{
+	padding: 6px;
+	border-left: solid 1px #ccc;
+	border-top: solid 1px #ccc;
+	vertical-align: top;
+	line-height: 140%;
+}
+
+.details_table th:first-child,
+.details_table td:first-child
+{
+	border-left: none;
+}
+
+.details_table th.first_group,
+.details_table td.first_group
+{
+	border-left-width: 2px;
+}
+
+span.captures_count
+{
+	color: #999;
+	margin-top: 2px;
+	white-space: nowrap;
+}
+
+a.captures_count
+{
+	display: block;
+	background-image: url(../Images/Icons/bullet_toggle_plus.png);
+	background-repeat: no-repeat;
+	background-position: 1px 5px;
+	padding-left: 12px;
+	margin-top: 2px;
+	white-space: nowrap;
+}
+
+.captures
+{
+}
+
+.captures ol
+{
+	margin: 0px;
+	padding: 0px 0px 0px 32px;
+}
+
+.captures ol li
+{
+	padding-top: 2px;
+	color: #999;
+}
+
+.captures ol li span
+{
+	color: #333;
+}
+
+.captures_remaining
+{
+	white-space: nowrap;
+	padding-top: 2px;
+	color: #999;
+	font-style: italic;
+}
+
+.details_context
+{
+}
+
+.details_context pre {
+    font-family: inherit;
+}
+
+.details_context_no_script
+{
+	border: solid 1px #ccc;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.details_context em
+{
+	border-radius: 3px;
+	background-color: #a5d6f0;
+	font-style: normal;
+	padding: 0px 1px;
+	margin-right: 1px;
+}
+
+.details_context em.odd
+{
+	background-color: #a5d6f0;
+}
+
+.details_context em.even
+{
+	background-color: #c1e044;
+}
+
+.split_list
+{
+	margin: 0px;
+	padding: 6px 6px 6px 49px;
+	border: solid 1px #ccc;
+	background-color: #fff;
+}
+
+.split_list li:first-child
+{
+	border-top: none;
+}
+
+.split_list li
+{
+	padding: 4px 0px;
+	color: #999;
+	border-top: solid 1px #e2e2e2;
+}
+
+.split_list li span
+{
+	color: #333;
+}

@@ -176,10 +176,12 @@
     <Content Include="Components\MyObservableCollection.aspx" />
     <Content Include="Components\MyProperty.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\Base.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\simple-sidebar.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Tester.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -188,6 +190,22 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Components\MySingleton.aspx" />
+    <Content Include="Images\body_back.gif" />
+    <Content Include="Images\detail_tab_back.png" />
+    <Content Include="Images\footer_fade.png" />
+    <Content Include="Images\footer_leaves.png" />
+    <Content Include="Images\header_back.png" />
+    <Content Include="Images\input_fade.png" />
+    <Content Include="Images\main_back.png" />
+    <Content Include="Images\nav_divider.gif" />
+    <Content Include="Images\pixel-cccccc.gif" />
+    <Content Include="Images\regex_storm.png" />
+    <Content Include="Images\regex_tester.png" />
+    <Content Include="Images\sheet_bottom.png" />
+    <Content Include="Images\sheet_fade.png" />
+    <Content Include="Images\sheet_mid.png" />
+    <Content Include="Images\sheet_top.png" />
+    <Content Include="Images\transparent.gif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -439,6 +457,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\icons\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeHelpers\CodeHelpers.csproj">

@@ -6,77 +6,68 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Hello world!</title>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
-
-    <asp:PlaceHolder runat="server">
+<%--    <asp:PlaceHolder runat="server">
     <%: Scripts.Render("~/bundles/jquery") %>
     <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    --%>
 
 </head>
 
 <body>
-
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a runat="server" href="~">TypeLess</a></li>
-                <li><a runat="server" href="~/Components/MyProperty">Property</a></li>
-                <li><a runat="server" href="~/Components/MyICommand">ICommand</a></li>
-                <li><a runat="server" href="~/Components/MyObservableCollection">ObservableCollection</a></li>
-                <li><a runat="server" href="~/Components/MySingleton">Singleton</a></li>
-
-                <li><a runat="server" href="~/Components/CompSQLBackupTable">SQL Backup Table</a></li>
-                <li><a runat="server" href="~/Components/CompSQLDoublesCounter">SQL Count Doubles</a></li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form runat="server">
-                            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
-                        </form>
-                    </div>
-                </div>
+    <div class="body_container">
+        <div class="nav_back">
+            <div class="nav_wrap">
+                <ul>
+                    <li><a runat="server" href="~/Components/MyProperty">Property</a></li>
+                    <li><a runat="server" href="~/Components/MyICommand">ICommand</a></li>
+                    <li><a runat="server" href="~/Components/MyObservableCollection">ObservableCollection</a></li>
+                    <li><a runat="server" href="~/Components/MySingleton">Singleton</a></li>
+                    <li><a runat="server" href="~/Components/CompSQLBackupTable">SQL Backup Table</a></li>
+                </ul>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
+        <div class="main_back">
+            <div class="header_back">
+                <div class="header_content">
+                    <a class="header_logo"><img src="../Images/regex_storm.png" alt="Regex Storm .NET" /></a>
+                </div>
+                <div class="sheet_wrap">
+                    <div class="sheet_top"></div>
+                    <div class="sheet_mid">
+                        <div class="sheet_content">
 
+                            <img class="title" src="../Images/regex_tester.png" alt="Regex tester" />
+                            <div class="left_form_column">
+                                <form runat="server"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></form>
+                            </div>
+
+                            <div class="right_form_column">
+                                <div class="form_section">
+                                    <div class="label">ETC</div>
+                                    <div class="options_wrap">
+                                        text <br />text <br />text <br />text
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+                        </div>
+                    </div>
+                    <div class="sheet_bottom"></div>
+                </div>
+            </div>
+            <div class="push_footer"></div>
+        </div>
     </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery 
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript ->
-    <script-- src="js/bootstrap.min.js"></script-->>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+    <div class="footer_back">
+        <div class="footer_content">ai de plm</div>
+    </div>
 
 </body>
 
