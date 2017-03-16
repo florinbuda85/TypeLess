@@ -28,6 +28,7 @@
                     <li><a runat="server" href="~/Components/MyObservableCollection">ObservableCollection</a></li>
                     <li><a runat="server" href="~/Components/MySingleton">Singleton</a></li>
                     <li><a runat="server" href="~/Components/CompSQLBackupTable">SQL Backup Table</a></li>
+                    <li><a runat="server" href="~/Components/CompSQLDoublesCounter">SQL Doubles Finder</a></li>
                 </ul>
             </div>
         </div>
