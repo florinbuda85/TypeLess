@@ -13,7 +13,7 @@ namespace TypeLess.Components
         {
             #region pattern
             string pattern = @" select count(source.{2}), source.{2}  from 
-	                            (select distinct {2} from {1}) as source
+	                            (select {2} from {1}) as source
                             group by source.{2} 
                             order by 1 desc; ";
             #endregion
