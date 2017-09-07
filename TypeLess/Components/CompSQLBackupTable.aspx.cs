@@ -15,9 +15,12 @@ namespace TypeLess.Components
             #region pattern
             string pattern = @" select * into zbackup_{1}_{2} from {1}; ";
             #endregion
-            
+
+            var remoteTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Central European Standard Time");
+            var remoteTime = TimeZoneInfo.ConvertTime(DateTime.Now, remoteTimeZone);
+
             pattern = pattern.Replace("{1}", Utils.UppercaseFirst(tbName.Text));
-            pattern = pattern.Replace("{2}", DateTime.Now.ToString("yyyyMMddHHmmss"));
+            pattern = pattern.Replace("{2}", remoteTime.ToString("yyyyMMddHHmmss"));
 
             lblOutput.Text = pattern;
         }
