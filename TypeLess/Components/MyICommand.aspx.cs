@@ -18,7 +18,7 @@ namespace TypeLess.Components
         protected void Button1_Click1(object sender, EventArgs e)
         {
             #region pattern
-            string pattern = @"#region ICommand {1}
+            string pattern = @"#region ICommand {1} PLM
         private ICommand _{2}; 
         public ICommand {1}
         {
