@@ -16,7 +16,7 @@ namespace TypeLess.Components
             string pattern = @" select * into zbackup_{1}_{2} from {1}; ";
             #endregion
 
-            var remoteTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Eastern European Summer Time");
+            var remoteTimeZone = TimeZoneInfo.FindSystemTimeZoneById("GTB Standard Time");
             var remoteTime = TimeZoneInfo.ConvertTime(DateTime.Now, remoteTimeZone);
 
             pattern = pattern.Replace("{1}", Utils.UppercaseFirst(tbName.Text));
