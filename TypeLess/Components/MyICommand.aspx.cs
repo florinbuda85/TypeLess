@@ -45,9 +45,13 @@ namespace TypeLess.Components
         }
 #endregion";
             #endregion
+            
+            String s =  tbName.Text;
+            s = s.Replace(" ", "");
+            s = s.Replace(":", "");
 
-            pattern = pattern.Replace("{1}", Utils.UppercaseFirst(tbName.Text));
-            pattern = pattern.Replace("{2}", Utils.LowercaseFirst(tbName.Text));
+            pattern = pattern.Replace("{1}", Utils.UppercaseFirst(s));
+            pattern = pattern.Replace("{2}", Utils.LowercaseFirst(s));
 
             lblOutput.Text = pattern;
         }
